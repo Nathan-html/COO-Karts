@@ -1,4 +1,4 @@
-package services;
+package com.garage.services;
 
 public enum MenuType {
 

@@ -1,6 +1,6 @@
-package models;
+package com.garage.models;
 
-import paterns.FactoryProvider;
+import com.garage.models.factory.FactoryId;
 
 public class Kart {
 
@@ -10,7 +10,7 @@ public class Kart {
     private Boolean withGoPro;
 
     public Kart(String name, String registrationNumber, Boolean withGoPro) {
-        this.id = FactoryProvider.getFactory("id").generate();
+        this.id = "10";
         this.name = name;
         this.registrationNumber = registrationNumber;
         this.withGoPro = withGoPro;
@@ -57,4 +57,5 @@ public class Kart {
                 ", withGoPro=" + withGoPro +
                 '}';
     }
+
 }
